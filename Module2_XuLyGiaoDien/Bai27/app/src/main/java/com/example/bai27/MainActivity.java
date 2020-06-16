@@ -13,7 +13,7 @@ import com.example.model.Album;
 import com.example.model.BaiHat;
 
 import java.util.ArrayList;
-
+//test change
 public class MainActivity extends AppCompatActivity {
     Button btnThem, btnXem, btnQuanLy;
     public static ArrayList<Album> dsAlbum;
@@ -22,11 +22,12 @@ public class MainActivity extends AppCompatActivity {
     public static final int SAVE_NEW_ALBUM = 16;
     public static final int EDIT_ALBUM = 12;
     public static final int SAVE_EDIT_ALBUM = 19;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        int testGit = 010;
+        int testGit = 120;
         addControls();
         addEvent();
     }
