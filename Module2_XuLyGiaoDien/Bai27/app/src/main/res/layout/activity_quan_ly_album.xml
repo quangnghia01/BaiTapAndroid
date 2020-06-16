@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".QuanLyAlbum">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:shrinkColumns="0,2"
+        android:stretchColumns="*">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:padding="5px"
+                android:text="Tên album: " />
+
+            <Spinner
+                android:id="@+id/spinAlbum"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_span="2" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:padding="5px"
+                android:text="Tên bài hát: " />
+
+            <EditText
+                android:id="@+id/editTenBH"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_span="2"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="Nhập tên BH.."
+                android:inputType="textPersonName" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:padding="5px"
+                android:text="Ngày ra đĩa: " />
+
+            <EditText
+                android:id="@+id/editNgay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="date" />
+
+            <ImageButton
+                android:id="@+id/btnNgay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@android:drawable/ic_menu_my_calendar" />
+
+        </TableRow>
+
+    </TableLayout>
+
+    <Button
+        android:id="@+id/btnThemBH"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Thêm bài hát" />
+
+    <ListView
+        android:id="@+id/lvTenBH"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:listheader="dsBaiHat" />
+
+</LinearLayout>
